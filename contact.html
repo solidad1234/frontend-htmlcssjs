@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FitLife Coaching</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+            <!-- Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+            <!-- Email -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+            <!-- Phone -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+            <!-- Gender -->
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <!-- Services Interested In -->
+            <label for="services">Which service are you interested in?</label>
+            <select id="services" name="services">
+                <option value="personal_training">Personal Training</option>
+                <option value="nutrition_guidance">Nutrition Guidance</option>
+                <option value="mental_wellness">Mental Wellness Coaching</option>
+                <option value="group_fitness">Group Fitness Classes</option>
+            </select>
+
+            <!-- Preferred Contact Method -->
+            <label>Preferred Contact Method:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="contact-email" name="contact_method" value="email">
+                <label for="contact-email">Email</label>
+                <input type="checkbox" id="contact-phone" name="contact_method" value="phone">
+                <label for="contact-phone">Phone</label>
+            </div>
+
+            <!-- Date Picker -->
+            <label for="preferred_date">Preferred Date:</label>
+            <input type="date" id="preferred_date" name="preferred_date">
+
+            <!-- File Upload -->
+            <label for="file-upload">Upload Your Fitness Plan (Optional):</label>
+            <input type="file" id="file-upload" name="fitness_plan">
+
+            <!-- Message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FitLife Coaching. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

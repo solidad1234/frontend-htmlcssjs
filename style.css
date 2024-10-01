@@ -1,0 +1,406 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+header {
+    background: #282c34;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Intro Section */
+#intro {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: url('fitness-bg.jpg') no-repeat center center/cover; /* Add a fitness-themed background image */
+    color: white;
+}
+
+#intro h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Call-to-action Button */
+.cta-button {
+    display: inline-block;
+    background: #ff5722;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e64a19;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial {
+    background: #e0e0e0;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+.testimonial p:first-of-type {
+    font-style: italic;
+}
+
+.testimonial p:last-of-type {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+/* Footer */
+footer {
+    background: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #intro h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header, #about-info, #our-philosophy {
+    flex-grow: 1;
+}
+
+footer {
+    background: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; 
+    font-size: 0.9rem;
+}
+/* Services Page Specific Styles */
+#services-list {
+    background: #f4f4f4;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+#services-list h2 {
+    font-size: 2.5rem;
+    color: #282c34;
+    margin-bottom: 2rem;
+}
+
+.service {
+    background: white;
+    padding: 2rem;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    transition: transform 0.3s ease;
+}
+
+.service h3 {
+    font-size: 1.8rem;
+    color: #ff5722;
+    margin-bottom: 1rem;
+}
+
+.service p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.service:hover {
+    transform: translateY(-5px); /* Adds a hover effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Adds a shadow effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #services-list h2 {
+        font-size: 2rem;
+    }
+
+    .service {
+        padding: 1.5rem;
+    }
+
+    .service h3 {
+        font-size: 1.5rem;
+    }
+
+    .service p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .service {
+        padding: 1rem;
+    }
+
+    .service h3 {
+        font-size: 1.3rem;
+    }
+
+    .service p {
+        font-size: 0.9rem;
+    }
+}
+/* Contact Form Section */
+#contact-form {
+    background: #f4f4f4;
+    padding: 3rem 1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form h2 {
+    font-size: 2.5rem;
+    color: #282c34;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+}
+
+input, select, textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+button {
+    background-color: #ff5722;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+/* Responsive Adjustments for Form */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+}
+/* Gallery Section */
+#gallery {
+    background: #f4f4f4;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 2.5rem;
+    color: #282c34;
+    margin-bottom: 2rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item p {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Hover Effect for Gallery Items */
+.gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #gallery h2 {
+        font-size: 2rem;
+    }
+
+    .gallery-item p {
+        font-size: 1rem;
+    }
+}
+
+/* Lightbox Styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
